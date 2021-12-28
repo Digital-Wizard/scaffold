@@ -42,7 +42,11 @@
     </form>
 <hr>
 
+<div wire:loading>
 
+    Processing...
+
+</div>
     <div class="bg-info rounded p-1 text-center">
       
         <h1 class="text-light">{{$cost}} $</h1>
