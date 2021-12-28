@@ -1,5 +1,6 @@
 <?php
 
+use App\Repositories\CostRepository;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/cost-calculator', function () {
+    return view('cost-calculator');
+})->name('cost_calculator');
